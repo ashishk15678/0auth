@@ -1,6 +1,0 @@
-{
-  "/(api)/api/getdata/route": "app/(api)/api/getdata/route.js",
-  "/page": "app/page.js",
-  "/(dash)/v1/page": "app/(dash)/v1/page.js",
-  "/(dash)/v1/new/page": "app/(dash)/v1/new/page.js"
-}
