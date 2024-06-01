@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {}
+
+.box {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.inputText {
+  border-bottom: 1px solid black;
+
+
+}
+
+.inputText:hover,
+.inputText:focus {}
+
+
+.newbuttonclass {
+  border-radius: 55% 25% 60% 55%;
+}
+
+.newbuttonclass::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(72deg, #f95738 65%, #0d3b66 100%);
+  transform: translate3d(-28px, 20px, 0) scale(0.95);
+  filter: blur(29px);
+  opacity: var(0.71);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.newbuttonclass::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}

@@ -12,3 +12,10 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model log{
+  id      Int      @id @default(autoincrement())
+  ip String
+  for String?
+  Date DateTime
+  }
